@@ -19,7 +19,6 @@ protocol VGBasePageDataSource: NSObjectProtocol {
     var viewPage: ViewPage? { get set }
 }
 
-
 class VGBaseVC<T: VGBasePage, U: VGBaseVM>: UIViewController, VGBaseVMDataSource , VGBasePageDataSource {
   
     struct Constant {
@@ -27,7 +26,6 @@ class VGBaseVC<T: VGBasePage, U: VGBaseVM>: UIViewController, VGBaseVMDataSource
     }
     
     // MARK: - Properties
-    
     
     weak var coordinator: Coordinator?
     var viewPage: T?
